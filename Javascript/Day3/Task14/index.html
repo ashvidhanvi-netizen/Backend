@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task14</title>
+</head>
+<body>
+    <script>
+
+        const product = { name: "Laptop", price: 60000, 
+        category: "Electronics"};
+
+        getProductInfo = ({name,price,category}) =>{
+          return `product : ${name} price : ${price} category : ${category}`
+        }
+        console.log(getProductInfo(product));
+
+        const productUpdate = {
+            ...product, price : 65000
+        }
+
+        console.log(`${productUpdate.name}`);
+        console.log(`${productUpdate.price}`);
+        console.log(`${productUpdate.category}`);
+
+              
+      
+        
+    </script>
+    
+</body>
+</html>

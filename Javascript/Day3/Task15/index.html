@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task15</title>
+</head>
+<body>
+    <script>
+
+        const user = { name: "Bala", age: 25, role: "Frontend Developer",
+                           address: { city: "Chennai"} };
+
+
+        const userName = ({name}) => { return name
+
+        };
+
+        const userCity = ({city}) => {
+           return user.address?.city?? "unknown";
+
+        };
+
+        const userdetails = ({name , age , role , address}) => {
+            const city = address?.city?? "unnown";
+
+            return `${name}is a ${age} year old ${role} from ${address}.`
+
+        };
+
+        const userupdate = (user) => {
+
+            return {
+                ...user, age: 25 , role: "Frontend Developer",
+            }
+
+        }
+
+        const users = [ user,
+    {
+        name: "Arun",
+        age: 30,
+        role: "Backend Developer"
+    },
+    {
+        name: "Kumar",
+        age: 28,
+        role: "Tester"
+    }
+];
+
+       const userlist = (users) => {
+        
+        for (const {name,role}of users){
+
+            console.log(`${name}-${role}`);
+            
+        }
+        
+                           
+        };
+
+   
+        console.log(userName(user));
+        console.log(userCity(user));
+        console.log(userdetails(user));
+        console.log(userupdate(user));
+        console.log(userlist (users));
+        
+
+       
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
