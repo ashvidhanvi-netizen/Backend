@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        const numbers = [10, 20, 30, 40];
+
+        const result = numbers . some ((num)=> num > 35)
+
+        console.log(result);
+
+        const mark = [10, 20, 30, 40];
+
+        const result1 = mark . every ((mark)=> mark > 50)
+
+        console.log(result1 );
+
+        const roles = ["admin" , "manager" , "clerk" , "developer"]
+
+        const result2 = roles . includes ("admin");
+
+        console.log(result2);
+
+        const salary = [10000, 20000, 30000, 40000, 50000]
+
+        const totalsalary = salary . reduce ((total,salary) => total + salary, 0 );
+
+        console.log(totalsalary);
+
+        const cart = [
+            {product: "phone", price: 20000, quantity: 2},
+            {product: "watch", price: 10000, quantity: 3},
+        ];
+        
+        let total = 0;
+
+        cart.forEach((products)=>{
+            total = total + (products.price * products.quantity);
+        });
+        console.log(total);
+
+        const employees = [
+            { name: "Ashvi", salary: 25000 },
+            { name: "Bala", salary: 35000 },
+            { name: "Priya", salary: 40000 },
+            { name: "Kumar", salary: 28000 }
+        ];
+
+      const result3 = employees.filter((employee) => employee.salary > 30000);
+
+      console.log(result3);
+
+       const students = [
+    { id: 101, name: "Ashvi" },
+    { id: 102, name: "Priya" },
+    { id: 103, name: "Bala" }
+       ];
+
+      const result4 = students.find((student) => student.id === 102);
+
+      console.log(result4);
+        
+
+      const products = [
+    { id: 101, name: "Laptop" },
+    { id: 102, name: "Mouse" },
+    { id: 103, name: "Keyboard" }
+];
+
+     const result5 = products.findIndex((product) => product.id === 102);
+
+     console.log(result5);
+
+     const product = [
+    { name: "Laptop", price: 50000 },
+    { name: "Mouse", price: 500 },
+    { name: "Keyboard", price: 1000 },
+    { name: "Monitor", price: 10000 }
+    ];
+
+      product.sort((a, b) => a.price - b.price);
+
+      console.log(product);
+
+      const employee = [
+    { name: "Ashvi", salary: 25000 },
+    { name: "Bala", salary: 35000 },
+    { name: "Priya", salary: 40000 },
+    { name: "Kumar", salary: 28000 }
+    ];
+
+      const names = employees.map((employee) => employee.name);
+
+      console.log(names);
+        
+        
+
+
+
+    </script>
+    
+</body>
+</html>
