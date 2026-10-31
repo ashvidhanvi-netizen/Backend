@@ -1,0 +1,66 @@
+01. What is a Promise?
+
+A Promise is a JavaScript object used to handle asynchronous operations. It represents the eventual success or failure of an operation, such as fetching data from an API, reading a file, or performing a database operation. A Promise helps avoid deeply nested callbacks and makes asynchronous code easier to manage..
+
+
+02. What are the three Promise states?
+
+Pending: The operation is still running.
+Fulfilled: The operation is completed successfully.
+Rejected: The operation has failed.
+
+
+03. What is the difference between resolve and reject?
+
+When the operation succeeds, resolve() fulfills the Promise; when it fails, reject() rejects it.
+
+ 04. What is .then()?
+
+.then() is used to handle the successful result of a Promise.
+
+
+05. What is .catch()?
+
+.catch() is used to handle errors or rejected Promises.
+
+
+06. What is .finally()?
+
+.finally() executes after a Promise is completed, whether it is successful or rejected.
+
+
+07. What is fetch()?
+
+fetch() is a JavaScript method used to request data from an API or server.
+
+
+08. Why do we use response.json()?
+
+response.json() converts the API response into JavaScript objects or arrays so that we can access and use the data.
+
+
+09. What is async?
+
+async is a keyword used before a function to make it return a Promise.
+
+
+10. What is await?
+
+await is a keyword used inside an async function to wait for a Promise to complete before moving to the next statement.
+
+
+11. What is the difference between .then() and await?
+.then()	await
+Handles Promise results using callbacks.	
+Waits for a Promise to complete.
+Uses method chaining.	
+Makes asynchronous code look synchronous.
+Does not require an async function.
+Must be used inside an async function (or a module's top level).
+
+
+12. Does fetch reject for 404?
+
+No. Fetch does not automatically reject when the server returns an HTTP error such as 404 or 500.
+
+We must use response.ok to check whether the request was successful.
